@@ -8,9 +8,9 @@ This screen lists each of the 28 weapons available in the game sorted in 6 categ
 ### Heirloom Calculator
 To understand the concept of heirlooms, it is important to understand what an Apex pack is, and the different currencies available in Apex. A player cannot have a pack when they are at level 1. Apex rewards its players with Apex packs once they level up. Each pack consists of 3 unlockables- they could be legend/weapon skins or other cosmetics, crafting materials, or heirloom shards. However, a player is not awarded a pack on every level, instead the packs are awarded as follows:
 
-Level 2   -  20: One pack every level
-Level 22  - 300: One pack every two levels
-Level 305 - 500: One pack every five levels
+<p>Level 2   -  20: One pack every level</p>
+<p>Level 22  - 300: One pack every two levels</p>
+<p>Level 305 - 500: One pack every five levels</p>
 
 Every "modern" video game has some currency structure. In Apex, there are 3 different kinds of currencies available: Crafting Materials (used for unlocking cosmetics for Legends and weapons; obtained from Apex packs, and very few event-specific challenges), Legend Tokens (used for unlocking Legends, and purchasing exclusive Legend/Weapon skins; obtained only by levelling up), Apex Coins (the most premium currency, only currency in game that can be bought with real life currency; used to purchase Apex packs, and multiple other cosmetics; obtained by levelling the battle pass up, or available for purchase otherwise). 
 
