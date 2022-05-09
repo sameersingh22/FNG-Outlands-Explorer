@@ -6,17 +6,16 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 import { LegendStackScreen } from "./Legends";
-import { WeaponStackScreen } from "./Weapons";
 import { HomeScreen } from "./Home";
 import HeirloomCalculator from './Heirloom';
-
+import { StatusBar } from 'react-native';
 
 
 const Tab = createMaterialBottomTabNavigator();
 
 function MyTabs() {
   return (
-    <Tab.Navigator screenOptions={{ headerShown: false }}
+    <Tab.Navigator 
       initialRouteName="Home"
       shifting = {false}
       activeColor="goldenrod"
@@ -43,21 +42,12 @@ function MyTabs() {
         }}
       />
 
-      <Tab.Screen
-        name="Weapons" component={WeaponStackScreen}
-        options={{
-          
-          tabBarLabel: 'Weapons',
-          tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="pistol" color="black" size={24} />
-          ),
-        }}
-      />
+
 
       <Tab.Screen
         name="Heirloom Calculator" component={HeirloomCalculator}
         options={{
-          tabBarLabel: 'Heirloom',
+          tabBarLabel: 'Heirloom Calculator ',
           tabBarIcon: ({ color }) => (
             <AntDesign name="calculator" size={24} color="black" />
           ),

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Component } from 'react'; 
-import { Alert, View, StyleSheet, TextInput, Pressable, Text, ImageBackground} from "react-native";
+import { View, StyleSheet, TextInput, Pressable, Text, ImageBackground} from "react-native";
     
 class HeirloomCalculator extends Component 
 { 
