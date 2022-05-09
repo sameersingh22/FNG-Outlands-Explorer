@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { Text, View, StyleSheet, ImageBackground } from 'react-native';
-
+console.reportErrorsAsExceptions = false;
 
 
 function HomeScreen() {return (
 
-  <ImageBackground style={ styles.imgBackground } 
+  <ImageBackground style={styles.imgBackground} 
     resizeMode='cover' 
     source={require('./assets/homeBG.png')}>
 
@@ -21,10 +21,12 @@ function HomeScreen() {return (
         There are 10 planets across the known multiverse that form the "Outlands". After the events of "Titanfall 1" and "Titanfall 2", the Outlands were free of the centuries-long war perpetrated by Interstellar Manufacturing Corporation (IMC). This resulted in chaos across the Outlands, and the revival of an old bloodsport: The Apex Games.  
       </Text>
       
+
       <Text style = {styles.lineBreak}>*</Text>
       <Text style = {styles.lineBreak}>*</Text>
       <Text style = {styles.lineBreak}>*</Text>
-    
+
+
       <Text style = {[styles.description, {color: '#00FF00'}]}>
       In the Tianfall universe, there existed a mercenary group lead by Kuben Blisk, called the "Apex Predators". By the end of Titanfall 2, the player would have eliminated all the members of the group. The Apex Games were set up by Blisk in order to replenish his mercenary group and also to make a profit.  
       </Text>
@@ -70,13 +72,13 @@ const styles = StyleSheet.create({
     
   lineBreak: {
     fontWeight: "bold",
-    fontSize: 20,
+    fontSize: 10,
     textAlign: "center",
     opacity: 0
   },
 
   description:{
-    fontSize: 13.5,
+    fontSize: 19,
     textAlign: "left",
     fontWeight: "bold",
    

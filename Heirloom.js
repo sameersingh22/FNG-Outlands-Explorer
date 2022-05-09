@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Component } from 'react'; 
 import { Alert, View, StyleSheet, TextInput, Pressable, Text, ImageBackground} from "react-native";
-    
+console.reportErrorsAsExceptions = false;    
 class HeirloomCalculator extends Component 
 { 
   showAlert=()=> 

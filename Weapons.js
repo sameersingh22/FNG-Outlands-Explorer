@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Text, View, StyleSheet, TouchableOpacity, Pressable, ImageBackground } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
+console.reportErrorsAsExceptions = false;
 
 const WeaponStack = createNativeStackNavigator();
 

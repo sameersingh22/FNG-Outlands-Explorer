@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Text, View, ScrollView, SafeAreaView, StyleSheet, TouchableOpacity, Pressable, ImageBackground } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
+console.reportErrorsAsExceptions = false;
 const LegendStack = createNativeStackNavigator();
 
 
@@ -284,7 +284,13 @@ const styles = StyleSheet.create({
     borderColor: '#000000',  
     borderWidth: 1,
     opacity: .5,
-
-  }
+  },
+  
+    imgBackground: {
+    width: '100%',
+    height: '100%',
+    flex: 1,
+    opacity: .95
+  },
   
 });
