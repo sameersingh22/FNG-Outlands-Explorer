@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Component } from 'react'; 
-import { Alert, View, StyleSheet, TextInput, Pressable, Text} from "react-native";
+import { Alert, View, StyleSheet, TextInput, Pressable, Text, ImageBackground} from "react-native";
     
 class HeirloomCalculator extends Component 
 { 
@@ -55,6 +55,10 @@ class HeirloomCalculator extends Component
   render() 
   { 
     return( 
+        <ImageBackground style={ styles.imgBackground } 
+    resizeMode='cover' 
+    source={require('./assets/homeBG.png')}>
+
       <View style={styles.screenStyle}> 
         <Text style = {styles.description}>
         This section of the app will calculate how many Apex packs you have opened.
@@ -72,6 +76,7 @@ class HeirloomCalculator extends Component
       </Pressable>
       
       </View>
+      </ImageBackground>
     );
   }
 } 
@@ -87,7 +92,15 @@ const styles = StyleSheet.create({
   },
 
   description:{
-    fontSize: 25
+    fontSize: 25,
+    color: "white"
+  },
+
+  imgBackground: {
+    width: '100%',
+    height: '100%',
+    flex: 1,
+    opacity: .95
   },
 
   input: {

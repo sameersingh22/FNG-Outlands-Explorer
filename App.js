@@ -17,7 +17,7 @@ const Tab = createMaterialBottomTabNavigator();
 function MyTabs() {
   return (
     <Tab.Navigator screenOptions={{ headerShown: false }}
-      initialRouteName="Home"
+      initialRouteName="Legends"
       shifting = {false}
       activeColor="goldenrod"
       labelStyle={{ fontSize: 17 }}
