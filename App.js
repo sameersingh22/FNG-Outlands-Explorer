@@ -9,7 +9,7 @@ import { LegendStackScreen } from "./Legends";
 import { WeaponStackScreen } from "./Weapons";
 import { HomeScreen } from "./Home";
 import HeirloomCalculator from './Heirloom';
-console.reportErrorsAsExceptions = false;
+
 
 
 const Tab = createMaterialBottomTabNavigator();

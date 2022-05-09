@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Text, View, StyleSheet, TouchableOpacity, Pressable, ImageBackground } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-console.reportErrorsAsExceptions = false;
+
 
 const WeaponStack = createNativeStackNavigator();
 
@@ -86,11 +86,11 @@ function WeaponScreen({ navigation }) {
           <Text>Attachments</Text>
         </Pressable>
         
-        <Pressable style={styles.button2} onPress={() => navigation.navigate('Shotgun_Attachments')}>
+        <Pressable style={styles.button2} onPress={() => navigation.navigate('Shotgun Attachments')}>
           <Text>Attachments</Text>
         </Pressable>
 
-        <Pressable style={styles.button2} onPress={() => navigation.navigate('Pistol_Attachments')}>
+        <Pressable style={styles.button2} onPress={() => navigation.navigate('Pistol Attachments')}>
           <Text>Attachments</Text>
         </Pressable>
       </View>
@@ -194,7 +194,7 @@ const styles = StyleSheet.create({
   },
 
    imgBackground: {
-    width: '100%',
+    //width: '100%',
     height: '100%',
     flex: 1,
     opacity: .95

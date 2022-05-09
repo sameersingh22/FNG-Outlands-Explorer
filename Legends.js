@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Text, View, ScrollView, SafeAreaView, StyleSheet, TouchableOpacity, Pressable, ImageBackground } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-console.reportErrorsAsExceptions = false;
+
 const LegendStack = createNativeStackNavigator();
 
 
@@ -41,6 +41,11 @@ function LegendScreen({ navigation }) {
       <ImageBackground style={ styles.imgBackground } 
     resizeMode='cover' 
     source={require('./assets/homeBG.png')}>
+
+      <Pressable style={[styles.legendButton, {backgroundColor: "cyan"}]} onPress={() => navigation.navigate('Bloodhound')}>
+        <Text>Legends:</Text>
+      </Pressable>
+
 
      <Pressable style={styles.legendButton} onPress={() => navigation.navigate('Bloodhound')}>
         <Text>Bloodhound</Text>
@@ -118,7 +123,7 @@ function LegendScreen({ navigation }) {
         <Text>Ash</Text>
       </Pressable>
 
-      <Pressable style={styles.legendButton} onPress={() => navigation.navigate('Mad_Maggie')}>
+      <Pressable style={styles.legendButton} onPress={() => navigation.navigate('Mad Maggie')}>
         <Text>Mad Maggie</Text>
       </Pressable>
      </ImageBackground>
@@ -284,13 +289,14 @@ const styles = StyleSheet.create({
     borderColor: '#000000',  
     borderWidth: 1,
     opacity: .5,
+
   },
-  
     imgBackground: {
     width: '100%',
     height: '100%',
     flex: 1,
     opacity: .95
   },
+
   
 });

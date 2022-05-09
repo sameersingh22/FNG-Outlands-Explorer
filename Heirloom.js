@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Component } from 'react'; 
 import { Alert, View, StyleSheet, TextInput, Pressable, Text, ImageBackground} from "react-native";
-console.reportErrorsAsExceptions = false;    
+    
 class HeirloomCalculator extends Component 
 { 
   showAlert=()=> 
@@ -64,12 +64,10 @@ class HeirloomCalculator extends Component
         This section of the app will calculate how many Apex packs you have opened.
         </Text>
 
-        <Text>
-        </Text>
 
-        <TextInput style={styles.input} placeholder = "Enter your account level" onChangeText = {Level=>this.setState({Level})}/>
-        <TextInput style={styles.input} placeholder = "Number of packs purchased" onChangeText = {Purchased=>this.setState({Purchased})}/> 
-        <TextInput style={styles.input} placeholder = "Packs obtanied from other sources" onChangeText = {Other_Sources=>this.setState({Other_Sources})}/>
+        <TextInput style={styles.input} placeholder = "Enter your account level" placeholderTextColor="white" onChangeText = {Level=>this.setState({Level})}/>
+        <TextInput style={styles.input} placeholder = "Number of packs purchased" placeholderTextColor="white" onChangeText = {Purchased=>this.setState({Purchased})}/> 
+        <TextInput style={styles.input} placeholder = "Packs obtanied from other sources" placeholderTextColor="white" onChangeText = {Other_Sources=>this.setState({Other_Sources})}/>
 
       <Pressable style={styles.button} onPress={this.Sum}>
         <Text>Calculate!</Text>
@@ -108,7 +106,8 @@ const styles = StyleSheet.create({
     margin: 10,
     borderWidth: 1,
     padding: 10,
-    width: 275
+    width: 275,
+    borderColor: "white"
   },
 
   button:{
