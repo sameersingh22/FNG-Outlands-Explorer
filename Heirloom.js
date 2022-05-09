@@ -18,27 +18,27 @@ class HeirloomCalculator extends Component
 
   Sum=()=>
   {
-    var Packs_Purchased = this.state.Purchased; 
-    var Other_Packs = this.state.Other_Sources; 
-    var Account_level = this.state.Level; 
+    var Packs_Purchased = parseInt(this.state.Purchased, 10); 
+    var Other_Packs = parseInt(this.state.Other_Sources, 10); 
+    var Account_level = parseInt(this.state.Level, 10); 
     var Account_Level_Packs;
 
     if (Account_level < 1) {
 		  alert("Account level should be atleast 1");
     }
     else if (Account_level == 1) {
-		  Account_Level_Packs = 0;
+		  Account_Level_Packs = parseInt('0', 10);
 	  }
     
 	  else if (Account_level <= 20) {
-		  Account_Level_Packs = Account_level - 1;
+		  Account_Level_Packs = parseInt(this.state.Level, 10) - 1;
 	  } 
     else if (Account_level <= 300) {
-		  Account_Level_Packs = 19 + Math.floor( (Account_level - 20) / 2 );
+		  Account_Level_Packs = 19 + Math.floor( (parseInt(this.state.Level, 10) - 20) / 2 );
     }
 
     else if (Account_level <= 500) {
-		  Account_Level_Packs = 19 +  140  + Math.floor( (Account_level - 300) / 5 );
+		  Account_Level_Packs = 19 +  140  + Math.floor( (parseInt(this.state.Level, 10) - 300) / 5 );
 	  } 
     else {
 		  alert("Account level cannot exceed 500");
@@ -48,14 +48,7 @@ class HeirloomCalculator extends Component
     {
       var R = Packs_Purchased + Other_Packs + Account_Level_Packs;
 
-      Alert.alert(  
-        'Number of packs opened', 
-        R, 
-        [{
-          text: 'OK', 
-          onPress: () => console.log('OK Pressed')
-        }] 
-      );  
+      alert(R); 
     } 
   }
 
@@ -63,6 +56,13 @@ class HeirloomCalculator extends Component
   { 
     return( 
       <View style={styles.screenStyle}> 
+        <Text style = {styles.description}>
+        This section of the app will calculate how many Apex packs you have opened.
+        </Text>
+
+        <Text>
+        </Text>
+
         <TextInput style={styles.input} placeholder = "Enter your account level" onChangeText = {Level=>this.setState({Level})}/>
         <TextInput style={styles.input} placeholder = "Number of packs purchased" onChangeText = {Purchased=>this.setState({Purchased})}/> 
         <TextInput style={styles.input} placeholder = "Packs obtanied from other sources" onChangeText = {Other_Sources=>this.setState({Other_Sources})}/>
@@ -82,7 +82,12 @@ const styles = StyleSheet.create({
   screenStyle: {
     flex: 1, 
     justifyContent: 'center', 
-    alignItems: 'center' 
+    alignItems: 'center',
+    padding: 10 
+  },
+
+  description:{
+    fontSize: 25
   },
 
   input: {

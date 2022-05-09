@@ -17,7 +17,7 @@ const Tab = createMaterialBottomTabNavigator();
 function MyTabs() {
   return (
     <Tab.Navigator screenOptions={{ headerShown: false }}
-      initialRouteName="Heirloom Calculator"
+      initialRouteName="Home"
       shifting = {false}
       activeColor="goldenrod"
       labelStyle={{ fontSize: 17 }}
