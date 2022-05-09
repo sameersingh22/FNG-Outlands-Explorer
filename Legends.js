@@ -1,11 +1,41 @@
+{/*
+Name: Sameer Singh
+SID: 200401374
+Project for Class: CS 455
+
+FNG Outlands Explorer 1.0.0
+*/}
+
 import * as React from 'react';
 import { Text, View, ScrollView, StyleSheet, Pressable, ImageBackground} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+{/*
+
+Declaring a variable called LegendStack using the createNativeStackNavigator() method. This will allow us to navigate between different screens for each legend. We can use the variable LegendStack as an object to navigate between the different screens of our "Legends" tab.
+
+*/}
+
 const LegendStack = createNativeStackNavigator();
 
-
+   {/*
+   
+   * LegendStackScreen
+   * 
+   * Purpose: 
+Declaring the Stack navigator (Recall that we created a "Navigator" instance called LegendStack). Each screen in the app has an attribute called name that controls which screen to navigte to, and an attribute called component that keeps a track of the method (function) that will be called when the navigator navigates to the said screen. The root screen is defined by the Stack method initialRouteName using tab navigation in App.js. Here, our root (or parent) screen is the "Legends" screen.
+   * 
+   * Parameter(s): None
+   * 
+   * Precondition(s): The stack navigator instance named LegendStack must be iniitialised.
+   * 
+   * Returns: N/A
+   * 
+   * Side effect:
+   * <1> The app will create a navigation tree for each legend, keeping the "Legends" bottom tab as the root screen. Please note that a stack navigator has been nested in a bottom tab navigator. 
+   
+   */}
 function LegendStackScreen() {
   return (
     
@@ -36,6 +66,25 @@ function LegendStackScreen() {
   );
 }
 
+   {/*
+   
+   * LegendScreen
+   * 
+   * Purpose: 
+This function displays the list of all legends, with each legend entry defined as a pressable to allow navigation to that legend's page.
+   * 
+   * Parameter(s): {navigation} component
+   * 
+   * Precondition(s): The stack navigator instance named LegendStack must be iniitialised. All screen names for the stack navigator must be set.
+   * 
+   * Returns: N/A
+   * 
+   * Side effect:
+   * <1> The app will render a ScrollView of a list of 20 pressables, each representing a character from Apex Legends. 
+   *    
+   * 
+  */}
+   
 function LegendScreen({ navigation }) {
   return ( 
       <ImageBackground style={ styles.imgBackground } 
@@ -130,6 +179,25 @@ function LegendScreen({ navigation }) {
      </ImageBackground>
   );
 }
+
+   {/*
+   
+   * **LegendName**
+   * 
+   * Purpose: 
+**LegendName** is not a itself a function, but represents a group of identical functions (referred to as family of functions). Since the next 20 functions achieve the same goal: display a legend's page (that highlights each of their 3 abilities), the family of functions is documented in a single block rather than re-using the same block comment for each function. The name of a particular legend screen function is the same as that legend's name, the only excption being Mad Maggie (function name: "Mad_Maggie"). For example, the function "Mirage" has been used to render the screen for a legend called Mirage.
+   * 
+   * Parameter(s): {navigation} component
+   * 
+   * Precondition(s): The stack navigator instance named LegendStack must be iniitialised. All screen names for the stack navigator must be set.
+   * 
+   * Returns: The screen of the selected legend.
+   * 
+   * Side effect:
+   * <1> The app will render a unique screen depending on which legend the user chooses from the ScrollView list. 
+   *    
+   * 
+  */}
 
 function Bloodhound({navigation}){
 return(

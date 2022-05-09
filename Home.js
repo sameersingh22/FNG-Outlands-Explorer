@@ -1,7 +1,32 @@
+{/*
+Name: Sameer Singh
+SID: 200401374
+Project for Class: CS 455
+
+FNG Outlands Explorer 1.0.0
+*/}
+
 import * as React from 'react';
 import { Text, View, ScrollView, StyleSheet, ImageBackground } from 'react-native';
 
+   {/*
+   
+   * HomeScreen
+   * 
+   * Purpose: 
+This function simply renders the Homescreen of the app. The homescreen provides a basic introduction to Apex Legends.
 
+   * Parameter(s): None
+   * 
+   * Precondition(s): The stack navigator instance named LegendStack must be iniitialised. All screen names for the stack navigator must be set.
+   * 
+   * Returns: The Homescreen of the app.
+   * 
+   * Side effect:
+   * <1> The app will render the Homescreen. 
+   *    
+   * 
+  */}
 
 function HomeScreen() {return (
 
