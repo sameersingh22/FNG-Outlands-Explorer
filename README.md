@@ -1,11 +1,17 @@
+
 # FNG Outlands Explorer (Version 1.0.0)
-## Overview
-FNG Outlands Explorer (referred to as the "companion app", for the purposes of this document) is an unofficial companion app for the video game "Apex Legends" (referred to as "Apex"). The companion app is divided into 3 screens using navigation tabs: Legends, Loadout, and Heirloom Calculator. 
-### Legends
-This screen lists each of the 20 playable characters, also known as "Legends". Each legend has 3 abilities in the game. The user can click/tap on a Legend's name for a brief description of the abilities of that legend, along with the reason of their participation in the Apex Games.
-### Loadout
-This screen lists each of the 28 weapons available in the game sorted in 6 categories, namely: Assault Rifles, Sub Machine Guns, Light Machine Guns, Sniper Rifles, Shotguns, and Pistols. Each weapon has its own set of attachments. The current version of the app does not explain each attachment in detail, but this will be changed in the coming updates.
-### Heirloom Calculator
+
+## Overview 
+FNG Outlands Explorer (referred to as the "companion app", for the purposes of this document) is an unofficial companion app for the video game "Apex Legends" (referred to as "Apex"). The companion app is divided into 3 screens using navigation tabs: Home, Legends, and Heirloom Calculator. 
+## Why this name?
+Because the companion app can prove to be quite informative for new players (or experienced players who took a break from the game), it is perfect for an "FNG" (Fresh New Graduate). Also, since Apex is set in a region called "The Outlands" and the companion app explores each aspect of the game, the app has been given the name "FNG Outlands Explorer".
+
+## App is divided into 3 screens using Tab navigation
+#### Tab 1: Home 
+This screen gives a brief introduction to the Apex Legends video game and briefly explains the user how to use the app.
+#### Tab 2: Legends
+This screen lists each of the 20 playable characters, also known as "Legends". Each legend has 3 abilities in the game. The user can click/tap on a Legend's name for a brief description of the abilities of that legend.
+#### Tab 3: Heirloom Calculator
 To understand the concept of heirlooms, it is important to understand what an Apex pack is, and the different currencies available in Apex. A player cannot have a pack when they are at level 1. Apex rewards its players with Apex packs once they level up. Each pack consists of 3 unlockables- they could be legend/weapon skins or other cosmetics, crafting materials, or heirloom shards. However, a player is not awarded a pack on every level, instead the packs are awarded as follows:
 
 <p>Level 2   -  20: One pack every level</p>
@@ -20,5 +26,34 @@ The heirloom shards can only be found in Apex packs, and nowhere else. If the pl
 The "Heirloom Calculator" screen of the companion app takes into account the level of the user, number of packs they purchased, and packs achieved from other sources (events, battle pass, bugs, etc.) and evaluates how many packs has the user opened. This way, the user/player can get an idea of how many packs they need to open until they reach the next 500th pack for a guaranteed heirloom drop.
 
 
-## Why this name?
-Because the companion app can prove to be quite informative for new players (or experienced players who took a break from the game), it is perfect for an "FNG" (Fresh New Graduate). Also, since Apex is set in a region called "The Outlands" and the companion app explores each aspect of the game, the app has been given the name "FNG Outlands Explorer".
+
+## Deployment
+
+To deploy this project run
+```bash
+  npm install -g expo-cli
+```
+Install expo package
+```bash
+npm install expo
+```
+
+Install all required packages
+```bash
+expo install
+```
+
+Run app through expo
+```bash
+expo start
+```
+
+This will allow our Outlands Explorer app to run on a mobile emulator.
+
+## Future updates
+
+This app will be constantly updated to support upcoming changes to Apex Legends. The app is open source for other developers to contribute.
+## Feedback and Contact
+
+If you have any feedback/suggestions, please reach out at apsmac16@gmail.com 
+
